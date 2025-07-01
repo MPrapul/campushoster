@@ -172,7 +172,7 @@ export function DemoSection() {
                     </span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Join 500+ schools already using Campushoster to streamline operations and improve outcomes.
+                    Join 150+ schools already using Campushoster to streamline operations and improve outcomes.
                   </p>
                   <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
                     Professional setup • Expert support • Proven results

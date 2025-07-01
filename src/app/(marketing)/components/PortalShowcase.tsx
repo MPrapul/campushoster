@@ -175,19 +175,19 @@ const portalFeatures = {
 
 export function PortalShowcase() {
   return (
-    <section id="portals" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
+    <section id="portals" className="py-16 sm:py-24 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 px-2">
             Multi-Portal Experience
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4">
             Tailored interfaces for every stakeholder in your educational ecosystem
           </p>
         </motion.div>
@@ -199,11 +199,19 @@ export function PortalShowcase() {
           viewport={{ once: true }}
         >
           <Tabs defaultValue="admin" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-12 bg-white/80 backdrop-blur-sm dark:bg-slate-800/80">
-              <TabsTrigger value="admin" className="text-lg font-semibold">Admin</TabsTrigger>
-              <TabsTrigger value="teacher" className="text-lg font-semibold">Teacher</TabsTrigger>
-              <TabsTrigger value="parent" className="text-lg font-semibold">Parent</TabsTrigger>
-              <TabsTrigger value="student" className="text-lg font-semibold">Student</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8 sm:mb-12 bg-white/80 backdrop-blur-sm dark:bg-slate-800/80 gap-1 p-1 h-auto">
+              <TabsTrigger value="admin" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+                Admin
+              </TabsTrigger>
+              <TabsTrigger value="teacher" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+                Teacher
+              </TabsTrigger>
+              <TabsTrigger value="parent" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+                Parent
+              </TabsTrigger>
+              <TabsTrigger value="student" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+                Student
+              </TabsTrigger>
             </TabsList>
 
             {Object.entries(portalFeatures).map(([portal, features]) => (
@@ -214,7 +222,7 @@ export function PortalShowcase() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
                   >
                     {features.map((feature, index) => (
                       <motion.div
@@ -226,18 +234,18 @@ export function PortalShowcase() {
                         className="group"
                       >
                         <Card className="h-full glass backdrop-blur-sm border-white/20 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                          <CardContent className="p-6">
-                            <div className="flex items-center mb-4">
-                              <div className={`p-3 rounded-lg ${feature.color} mr-4`}>
-                                <feature.icon className="w-6 h-6 text-white" />
+                          <CardContent className="p-4 sm:p-6">
+                            <div className="flex items-center mb-3 sm:mb-4">
+                              <div className={`p-2 sm:p-3 rounded-lg ${feature.color} mr-3 sm:mr-4 flex-shrink-0`}>
+                                <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                               </div>
-                              <div>
-                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 transition-colors">
+                              <div className="min-w-0 flex-1">
+                                <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 transition-colors leading-tight">
                                   {feature.title}
                                 </h3>
                               </div>
                             </div>
-                            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                               {feature.description}
                             </p>
                           </CardContent>
@@ -257,10 +265,14 @@ export function PortalShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className="text-center mt-12 sm:mt-16"
         >
-          <Badge variant="secondary" className="text-lg px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-            One Platform • Four Tailored Experiences • Infinite Possibilities
+          <Badge variant="secondary" className="text-base sm:text-lg px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white leading-relaxed max-w-full">
+            <span className="block sm:inline">One Platform</span>
+            <span className="hidden sm:inline"> • </span>
+            <span className="block sm:inline">Four Tailored Experiences</span>
+            <span className="hidden sm:inline"> • </span>
+            <span className="block sm:inline">Infinite Possibilities</span>
           </Badge>
         </motion.div>
       </div>

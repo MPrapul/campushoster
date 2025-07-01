@@ -538,9 +538,7 @@ export function ContactSection() {
         >
           <Card className="glass backdrop-blur-sm border-white/20 max-w-4xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Join 500+ Schools Transforming Education
-              </h3>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Join 150+ Schools Transforming Education</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 See why educational institutions across India trust Campushoster for their complete school management needs
               </p>

@@ -178,7 +178,7 @@ export function Testimonials() {
         >
           {[
             { metric: "4.9/5", label: "Average Rating" },
-            { metric: "500+", label: "Happy Schools" },
+            { metric: "150+", label: "Happy Schools" },
             { metric: "99%", label: "Would Recommend" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
