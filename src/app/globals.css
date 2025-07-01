@@ -43,6 +43,9 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Custom breakpoints */
+@custom-breakpoint xs screen(min-width: 475px);
+
 :root {
   --font-inter: 'Inter', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
@@ -111,8 +114,11 @@
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -165,6 +171,14 @@
     from { transform: translateX(0); }
     to { transform: translateX(200px); }
   }
+  
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    .starfield {
+      background-size: 150px 75px;
+      animation-duration: 15s;
+    }
+  }
 }
 
 /* Custom scrollbar */
@@ -188,4 +202,21 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Mobile touch improvements */
+@media (hover: none) {
+  button:hover {
+    transform: none;
+  }
+}
+
+/* Prevent zoom on input focus on iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 16px;
+  }
 }
