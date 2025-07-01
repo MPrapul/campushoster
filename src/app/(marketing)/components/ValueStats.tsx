@@ -17,10 +17,10 @@ const stats = [
     description: 'Reliable cloud infrastructure'
   },
   {
-    value: 500,
-    suffix: '+',
-    label: 'Schools Trust Us',
-    description: 'Educational institutions worldwide'
+    value: 150,
+    label: "Schools Trust Us",
+    suffix: "+",
+    description: "Educational institutions worldwide"
   },
   {
     value: 15,

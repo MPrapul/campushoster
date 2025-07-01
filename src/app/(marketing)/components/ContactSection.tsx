@@ -123,11 +123,10 @@ export function ContactSection() {
   ];
 
   const studentCountOptions = [
-    'Less than 100 students',
-    '100-500 students', 
-    '500-1000 students',
-    '1000-2000 students',
-    'More than 2000 students'
+    'Under 100 students',
+    '100-150 students',
+    '150+ students',
+    '1000+ students'
   ];
 
   const roleOptions = [

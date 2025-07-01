@@ -89,7 +89,7 @@ const structuredData = {
     "@type": "Offer",
     "priceCurrency": "INR",
     "price": "4999",
-    "description": "Basic plan for schools with up to 500 students"
+    "description": "Basic plan for schools with up to 150 students"
   },
   "applicationCategory": "EducationApplication",
   "operatingSystem": "Web-based",

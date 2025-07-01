@@ -32,49 +32,55 @@ This project is fully optimized for mobile devices with:
 - Touch-friendly button sizes
 - Proper text wrapping for small screens
 
-## 🌐 Vercel Deployment
+## 🚀 Vercel Deployment
 
 ### Automatic Deployment (Recommended)
 
-1. **Connect to Vercel**: 
-   - Go to [vercel.com](https://vercel.com)
-   - Sign in with your GitHub account
-   - Click "New Project"
-   - Import this repository: `https://github.com/MPrapul/campushoster.git`
+1. **Connect to Vercel**:
+   - Go to [vercel.com](https://vercel.com) and sign in with your GitHub account
+   - Click "Add New Project"
+   - Import this repository: `https://github.com/MPrapul/campushoster`
 
 2. **Configure Project**:
    - Project Name: `campushoster`
-   - Framework Preset: Next.js (auto-detected)
+   - Framework Preset: `Next.js` (auto-detected)
    - Root Directory: `./` (default)
-   - Build and Output Settings: Use defaults
+   - Build Command: `npm run build` (default)
+   - Output Directory: `.next` (default)
+   - Install Command: `npm install` (default)
 
 3. **Deploy**:
    - Click "Deploy"
-   - Vercel will automatically build and deploy your site
-   - You'll get a production URL like `https://campushoster.vercel.app`
+   - Vercel will automatically build and deploy your project
+   - Your site will be available at `https://campushoster.vercel.app` (or similar)
 
-### Manual Deployment
+### Manual Deployment via CLI
 
-```bash
-# Install Vercel CLI
-npm i -g vercel
+1. **Install Vercel CLI**:
+   ```bash
+   npm i -g vercel
+   ```
 
-# Login to Vercel
-vercel login
+2. **Login to Vercel**:
+   ```bash
+   vercel login
+   ```
 
-# Deploy to Vercel
-vercel --prod
-```
+3. **Deploy**:
+   ```bash
+   vercel --prod
+   ```
 
-### Environment Variables (Optional)
+### Environment Configuration
 
-If you plan to add backend features later, you can set these in Vercel dashboard:
+No environment variables are required for this landing page. The project is configured to work out of the box.
 
-```env
-# Example variables for future backend integration
-NEXT_PUBLIC_APP_URL=https://your-domain.vercel.app
-NEXT_PUBLIC_CONTACT_EMAIL=info@verixence.com
-```
+### Custom Domain (Optional)
+
+1. In your Vercel dashboard, go to your project settings
+2. Navigate to "Domains"
+3. Add your custom domain (e.g., `campushoster.com`)
+4. Follow Vercel's instructions to configure DNS
 
 ## 🛠️ Development
 

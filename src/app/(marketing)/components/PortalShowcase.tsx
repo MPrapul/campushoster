@@ -199,17 +199,17 @@ export function PortalShowcase() {
           viewport={{ once: true }}
         >
           <Tabs defaultValue="admin" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8 sm:mb-12 bg-white/80 backdrop-blur-sm dark:bg-slate-800/80 gap-1 p-1 h-auto">
-              <TabsTrigger value="admin" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8 sm:mb-12 bg-white/80 backdrop-blur-sm dark:bg-slate-800/80 gap-2 p-2 h-auto rounded-xl">
+              <TabsTrigger value="admin" className="text-sm sm:text-base lg:text-lg font-semibold px-3 sm:px-4 py-3 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded-lg border border-transparent data-[state=active]:border-purple-600 bg-white/50 dark:bg-slate-700/50 hover:bg-white/80 dark:hover:bg-slate-600/50 transition-all duration-200">
                 Admin
               </TabsTrigger>
-              <TabsTrigger value="teacher" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+              <TabsTrigger value="teacher" className="text-sm sm:text-base lg:text-lg font-semibold px-3 sm:px-4 py-3 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded-lg border border-transparent data-[state=active]:border-purple-600 bg-white/50 dark:bg-slate-700/50 hover:bg-white/80 dark:hover:bg-slate-600/50 transition-all duration-200">
                 Teacher
               </TabsTrigger>
-              <TabsTrigger value="parent" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+              <TabsTrigger value="parent" className="text-sm sm:text-base lg:text-lg font-semibold px-3 sm:px-4 py-3 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded-lg border border-transparent data-[state=active]:border-purple-600 bg-white/50 dark:bg-slate-700/50 hover:bg-white/80 dark:hover:bg-slate-600/50 transition-all duration-200">
                 Parent
               </TabsTrigger>
-              <TabsTrigger value="student" className="text-sm sm:text-base lg:text-lg font-semibold px-2 sm:px-4 py-2 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+              <TabsTrigger value="student" className="text-sm sm:text-base lg:text-lg font-semibold px-3 sm:px-4 py-3 sm:py-3 h-auto data-[state=active]:bg-purple-600 data-[state=active]:text-white rounded-lg border border-transparent data-[state=active]:border-purple-600 bg-white/50 dark:bg-slate-700/50 hover:bg-white/80 dark:hover:bg-slate-600/50 transition-all duration-200">
                 Student
               </TabsTrigger>
             </TabsList>
@@ -265,14 +265,14 @@ export function PortalShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center mt-12 sm:mt-16"
+          className="text-center mt-12 sm:mt-16 px-4"
         >
-          <Badge variant="secondary" className="text-base sm:text-lg px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white leading-relaxed max-w-full">
-            <span className="block sm:inline">One Platform</span>
-            <span className="hidden sm:inline"> • </span>
-            <span className="block sm:inline">Four Tailored Experiences</span>
-            <span className="hidden sm:inline"> • </span>
-            <span className="block sm:inline">Infinite Possibilities</span>
+          <Badge variant="secondary" className="text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white leading-relaxed inline-block">
+            <span className="block xs:inline">One Platform</span>
+            <span className="hidden xs:inline text-purple-200"> • </span>
+            <span className="block xs:inline">Four Tailored Experiences</span>
+            <span className="hidden xs:inline text-purple-200"> • </span>
+            <span className="block xs:inline">Infinite Possibilities</span>
           </Badge>
         </motion.div>
       </div>
