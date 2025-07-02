@@ -128,7 +128,8 @@ export function PricingSection() {
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {plan.description}
                   </p>
-                  <div className="mb-6">
+                  {/* Price display removed as requested */}
+                  {/* <div className="mb-6">
                     <span className="text-5xl font-bold text-gray-900 dark:text-white">
                       {plan.price}
                     </span>
@@ -142,7 +143,7 @@ export function PricingSection() {
                         {plan.period}
                       </span>
                     )}
-                  </div>
+                  </div> */}
                 </CardHeader>
 
                 <CardContent className="p-8 pt-0">
